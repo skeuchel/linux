@@ -402,6 +402,10 @@ config BLKDEV_UBLK_LEGACY_OPCODES
 	  suggested to enable N if your application(ublk server) switches to
 	  ioctl command encoding.
 
+config BLK_DEV_ICEBLK
+	tristate "Support the iceblk block device"
+	default y
+
 source "drivers/block/rnbd/Kconfig"
 
 endif # BLK_DEV
